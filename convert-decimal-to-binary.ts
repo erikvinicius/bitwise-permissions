@@ -1,7 +1,7 @@
 export const convertDecimalToBinary = (
   decimal: number,
   withBinaryPrefix = true,
-  bitSize = 8
+  bitSize = 16
 ) => {
   const parser = decimal.toString(2).padStart(bitSize, "0");
 
