@@ -1,11 +1,11 @@
 import convertDecimalToBinary from "./convert-decimal-to-binary";
 
 enum PermissionsEnum {
-  READ = 1, //0x0000000000000001 (1 << 0)
-  WRITE = 2, //0x0000000000000001 (1 << 1)
-  UPDATE = 4, //0x0000000000000001 (1 << 2)
-  DELETE = 8, //0x0000000000000001 (1 << 3)
-  ALL = 16, //0x0000000000000001 (1 << 4)
+  READ = 1,   //0x0000000000000001 (1 << 0)
+  WRITE = 2,  //0x0000000000000010 (1 << 1)
+  UPDATE = 4, //0x0000000000000100 (1 << 2)
+  DELETE = 8, //0x0000000000001000 (1 << 3)
+  ALL = 16, //0x0000000000010000 (1 << 4)
 }
 
 const Roles = {
